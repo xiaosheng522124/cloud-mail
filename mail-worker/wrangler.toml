@@ -19,9 +19,9 @@ database_id = "e814d982-ad0c-4e19-9103-8746feb4be83"
 binding = "kv"
 id = "3dde191f528a400d9f120e7604aca75a"
 
-#[[r2_buckets]]
-#binding = "r2"			#r2对象存储绑定名默认不可修改
-#bucket_name = ""		#r2对象存储桶的名字
+[[r2_buckets]]
+binding = "r2"
+bucket_name = "cloud-mail-r2"
 
 [assets]
 binding = "assets"		#静态资源绑定名默认不可修改
