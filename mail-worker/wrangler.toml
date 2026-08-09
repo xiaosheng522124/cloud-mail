@@ -6,14 +6,18 @@ keep_vars = true
 [observability]
 enabled = true
 
-#[[d1_databases]]
-#binding = "db"			#d1数据库绑定名默认不可修改
-#database_name = ""		#d1数据库名字
-#database_id = ""		#d1数据库id
+[[routes]]
+pattern = "xiaosheng.kdns.fr"
+custom_domain = true
 
-#[[kv_namespaces]]
-#binding = "kv"			#kv绑定名默认不可修改
-#id = ""					#kv数据库id
+[[d1_databases]]
+binding = "db"
+database_name = "cloud-mail"
+database_id = "e814d982-ad0c-4e19-9103-8746feb4be83"
+
+[[kv_namespaces]]
+binding = "kv"
+id = "3dde191f528a400d9f120e7604aca75a"
 
 #[[r2_buckets]]
 #binding = "r2"			#r2对象存储绑定名默认不可修改
