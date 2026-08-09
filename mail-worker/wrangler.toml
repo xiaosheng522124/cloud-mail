@@ -29,10 +29,6 @@ directory = "./dist"	#前端vue项目打包的静态资源存放位置,默认dis
 not_found_handling = "single-page-application"
 run_worker_first = true
 
-[triggers]
-crons = ["0 16 * * *"]	#定时任务每天晚上12点执行
-
-
 #[vars]
 #orm_log = false
 #domain = []				#邮件域名可可配置多个 示例: ["example1.com","example2.com"]
